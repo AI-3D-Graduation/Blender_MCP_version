@@ -1,8 +1,4 @@
-# Recollector - AI-Powered 3D Model Generator with Blender Integration
-
-**Recollector**는 단일 이미지를 3D 모델로 변환하고, AI 채팅을 통해 Blender로 실시간 편집할 수 있는 웹 애플리케이션입니다.
-
-![Demo](https://via.placeholder.com/800x400?text=Recollector+Demo)
+(표준 MCP 프로토콜 전체를 그대로 따라 구현하지는 않았고, MCP와 최대한 유사하게 구현한겁니다.)
 
 ## ✨ 주요 기능
 
@@ -285,37 +281,3 @@ wsl redis-cli ping
 - 편집은 연속으로 진행됩니다
 - "대화 초기화"를 누르면 원본으로 되돌아갑니다
 - 편집된 모델은 `{task_id}_edited.glb`로 저장됩니다
-
-## 🤝 기여
-
-기여는 언제나 환영합니다! 다음 절차를 따라주세요:
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 라이선스
-
-이 프로젝트는 MIT 라이선스를 따릅니다. 자세한 내용은 [LICENSE](LICENSE) 파일을 참조하세요.
-
-## 👥 제작자
-
-- **Your Name** - [GitHub](https://github.com/yourusername)
-
-## 🙏 감사의 말
-
-- [Meshy AI](https://meshy.ai) - Image to 3D 변환
-- [Anthropic Claude](https://anthropic.com) - 자연어 처리
-- [Blender](https://blender.org) - 3D 편집 엔진
-- [FastAPI](https://fastapi.tiangolo.com) - 백엔드 프레임워크
-- [React Three Fiber](https://docs.pmnd.rs/react-three-fiber) - 3D 렌더링
-
-## 📞 문의
-
-프로젝트 관련 문의사항이 있으시면 이슈를 생성해주세요.
-
----
-
-⭐ 이 프로젝트가 유용하셨다면 Star를 눌러주세요!
