@@ -1,5 +1,50 @@
 (표준 MCP 프로토콜 전체를 그대로 따라 구현하지는 않았고, MCP와 최대한 유사하게 구현한겁니다.)
 
+## 블렌더 연동까지하는 방법 설명
+1. 블렌더 다운받기(Steam 블렌더가 아닌 웹에서 블렌더를 다운받는게 편합니다)
+2. 블렌더 실행
+3. 상단 수많은 탭 중 가장 오른쪽 Scripting 클릭
+4. 탭 바로 밑에 폴더 아이콘 Open 클릭
+5. blender_mcp_addon.py 선택해서 넣기
+6. 재생 아이콘(Run Script) 버튼 눌러서 실행
+7. 왼쪽에 있는 Window 탭 클릭
+8. Toggle System Console 클릭
+9. 콘솔에
+  ```
+  🚀 Blender MCP Server started in background
+  ⏳ Waiting for MCP to connect on port 9876...
+  ✅ Blender listening on localhost:9876 (waiting for MCP connection)
+  ```
+  이렇게 떠있으면 넘어가기
+
+10. 백엔드 터미널 2개 준비
+
+11. 
+  ```
+  venv\Scripts\python.exe -m blender_mcp.server
+  ```
+  - 백엔드와 블렌더 연결
+  ```
+  uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+  ```
+  - 백엔드 실행
+
+12. 블렌더 콘솔에
+  ```
+  ✅ MCP connected from ('127.0.0.1',
+  ```
+  이런게 있으면 연결 성공
+
+13. 프론트 실행
+14. 3D 모델 생성 후 편집 버튼 클릭
+15. 화면에서 왼쪽 절반은 프론트, 오른쪽 절반은 블렌더 놓기(필수는 아니지만 이렇게 해야 보기 편합니다)
+16. 채팅하면서 모델 편집
+
+<br>
+<br>
+<br>
+<br>
+
 ## ✨ 주요 기능
 
 ### 🖼️ Image to 3D
