@@ -19,21 +19,21 @@
 
 10. 백엔드 터미널 2개 준비
 
-11. 
-  ```
-  venv\Scripts\python.exe -m blender_mcp.server
-  ```
+11.
   - 백엔드와 블렌더 연결
-  ```
-  uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-  ```
+    ```
+    venv\Scripts\python.exe -m blender_mcp.server
+    ```
   - 백엔드 실행
+    ```
+    uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+    ```
 
 12. 블렌더 콘솔에
-  ```
-  ✅ MCP connected from ('127.0.0.1',
-  ```
-  이런게 있으면 연결 성공
+    ```
+    ✅ MCP connected from ('127.0.0.1',
+    ```
+    이런게 있으면 연결 성공
 
 13. 프론트 실행
 14. 3D 모델 생성 후 편집 버튼 클릭
